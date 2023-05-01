@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu {
+            border: 1px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #menu>ul {
+            background-color: rgb(24, 236, 211);
+        }
+
+        #menu ul {
+            list-style: none;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            float: left;
+        }
+
+        #menu ul a {
+            color: rgb(199, 93, 111);
+            text-decoration: none;
+            font-size: larger;
+            line-height: 32px;
+            padding: 0 15px;
+            display: block;
+        }
+
+        #menu ul li {
+            float: left;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu ul ul {
+            position: absolute;
+            background-color: grey;
+            display: none;
+        }
+
+        #menu ul ul li {
+            float: none;
+        }
+
+        #menu ul li:hover>ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallary</a></li>
+            <li><a href="#">Services</a>
+                <ul>
+                    <li><a href="#">Services1</a></li>
+                    <li><a href="#">Services2</a></li>
+                    <li><a href="#">Services3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
