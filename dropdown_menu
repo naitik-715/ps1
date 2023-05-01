@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Css Dropdown menu</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav {
+            background: #36004d;
+            float: left;
+            width: 100%;
+            height: 40px;
+            margin: 0px 0 2px 0px;
+        }
+
+        nav ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            display: inline;
+        }
+
+        nav ul li {
+            float: left;
+            list-style: none;
+            display: inline;
+            position: relative;
+            line-height: 23px;
+        }
+
+        nav ul li a {
+            align-items: center;
+            float: left;
+            list-style: none;
+            display: block;
+            padding: 4px 22px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav ul li:hover ul li a:hover {
+            background: #d298e7;
+            color: #000000;
+        }
+
+        nav ul li ul {
+            display: none;
+        }
+
+        nav ul li:hover ul {
+            width: 187px;
+            display: block;
+            float: left;
+            position: absolute;
+            left: 0px;
+            top: 29px;
+            background: #36004d;
+            border: 1px solid #36004d;
+        }
+
+        nav ul li:hover ul li {
+            margin: 0 5px;
+            padding: 0px;
+            display: inline;
+            float: left;
+            border-bottom: 1px dotted #dddddd;
+            position: relative;
+        }
+
+        nav ul li:hover ul li a {
+            font-weight: normal;
+            padding: 0px;
+            float: none;
+            width: 168px;
+            display: block;
+            padding: 0px 0 0px 9px;
+            font-size: 11px;
+            line-height: 25px;
+            height: 25px;
+        }
+
+        nav ul li:hover ul li ul {
+            display: none;
+        }
+
+        nav ul li:hover ul li:hover ul {
+            position: absolute;
+            left: 170px;
+            top: 0px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a>
+                <ul>
+                    <li><a href="#">SubMenu</a> </li>
+                    <li><a href="#">SubMenu</a> </li>
+                    <li><a href="#">SubMenu</a> </li>
+                    <li><a href="#">SubMenu</a>
+                        <ul>
+                            <li><a href="#">SubMenu </a> </li>
+                            <li><a href="#">SubMenu </a> </li>
+                            <li><a href="#">SubMenu </a> </li>
+                            <li><a href="#">SubMenu </a> </li>
+                            <li style="border-bottom: none;"><a href="#">SubMenu</a> </li>
+                        </ul>
+                    </li>
+                    <li style="border-bottom: none;"><a href="#">SubMenu</a> </li>
+                </ul>
+            </li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
